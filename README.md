@@ -1,5 +1,19 @@
 [리덕스?](https://ko.redux.js.org/introduction/getting-started/)   
 리덕스는 리액트에 종속되는 라이브러리가 아닌, 자바스크립트 앱읠 위한 상태관리 라이브러리다.   
+---
+💡 setting  
+
+1. parcel번들러 설치       
+*번들러(bundler)란?    
+dependency가 있는 자바스크립트 파일들을 최적화, 압축하여 하나 혹은 여러개의 static 파일로 빌드해주는 컴파일러
+>yarn global add parcel-bundler (또는 npm install -g parcel-bundler)
+
+2. 프로젝트 디렉토리에 package.json생성
+>yarn init -y (또는  npm init)
+
+3.  리덕스 다운받기
+>yarn add redux (또는 npm install redux)
+---
 
 ## 리덕스의 핵심개념
 [리덕스의 핵심개념 정리](https://yina-note.notion.site/react-dd127ec1b4234efabc9c16e15f708c47)
@@ -103,5 +117,11 @@ divToggle.onclick = () => {
 };
 ```
 
+
+## 리덕스의 세가지 규칙
+1. 단일 store를 사용한다.
+2. state는 읽기전용이다.
+3. reducer는 순수한 함수여야 한다.   
+[자세한 설명](https://www.notion.so/yina-note/redux-3-2a0cff1cec8c46f38b168dfcf4104003) 
 
 
